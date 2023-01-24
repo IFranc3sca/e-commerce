@@ -1,0 +1,31 @@
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  svg path {
+    transition: all 0.2s ease;
+  }
+  &:hover {
+    color: #fa6382;
+  }
+  &:hover svg path {
+    stroke: #fa6382;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  .label {
+    @media all and (max-width: 800px) {
+      & {
+        display: none;
+      }
+    }
+  }
+}
