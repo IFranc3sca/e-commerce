@@ -1,6 +1,8 @@
+import logo from "./logo.svg";
 import "./App.css";
-import Container from "./components/Container";
 import Header from "./components/Header";
+import Container from "./components/Container";
+import { Audio } from "react-loader-spinner";
 
 function App() {
   return (
