@@ -10,7 +10,7 @@ const Container = () => {
   return (
     <div className={styles.main}>
       <div className={styles.sxColumn}>
-        <NavBar setRoute={setRoute} />
+        <NavBar stateRoute={route} setRoute={setRoute} />
       </div>
       <div className={styles.dxColumn}>
         {route === "home" && <Home />}

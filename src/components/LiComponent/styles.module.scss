@@ -1,5 +1,4 @@
 .main {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -7,6 +6,7 @@
   height: 50px;
   padding: 20px;
   border-radius: 10px;
+  background-color: rgb(153, 255, 153);
   transition: all 0.2s ease;
   cursor: pointer;
   svg path {
@@ -21,11 +21,14 @@
   .icon {
     font-size: 20px;
   }
-  .label {
-    @media all and (max-width: 800px) {
-      & {
-        display: none;
-      }
-    }
+}
+
+li {
+  margin-top: 5px;
+}
+.active {
+  color: #fa6382;
+  svg path {
+    stroke: #fa6382;
   }
 }
