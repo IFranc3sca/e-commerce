@@ -2,11 +2,9 @@
 
 .main {
   width: 100%;
-  height: calc(100vh - $header-height);
   background-color: #ececec;
   display: flex;
   .sxColumn {
-    height: calc(100vh - $header-height);
     padding: 10px;
     @media all and (max-width: 800px) {
       & {
@@ -16,7 +14,6 @@
   }
   .dxColumn {
     width: 100%;
-    height: calc(100vh - $header-height);
     padding: 10px;
   }
 }

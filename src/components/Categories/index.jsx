@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { AiOutlineFileAdd } from "react-icons/ai";
 import { GET } from "../../libs/HTTP";
 import Modal from "../Modal";
 import Table from "../Table";
@@ -31,7 +32,7 @@ const Categories = () => {
       {showModal && <Modal getData={getData} setShowModal={setShowModal} />}
       <h1>Categories</h1>
       <button name="addBtn" onClick={() => setShowModal(true)}>
-        Aggiungi
+        <AiOutlineFileAdd />
       </button>
       <Table
         categoriesState={categoriesState.categories}

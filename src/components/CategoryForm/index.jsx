@@ -16,6 +16,7 @@ const CategoryForm = ({ setShowModal, getData, data }) => {
       });
       setEdit(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleForm = (input, e) => {
